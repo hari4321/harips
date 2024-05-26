@@ -1,0 +1,89 @@
+.home-header {
+    padding-top: 80px !important;
+}
+
+.home-section {
+    position: relative;
+    z-index: -1;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+}
+
+.home-content {
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.heading {
+    font-size: 2.4em !important;
+    padding-left: 50px !important;
+}
+
+.heading-name {
+    font-size: 2.5em !important;
+    padding-left: 45px !important;
+}
+
+.main-name {
+    color: #FEC260;
+}
+
+.home-about-section {
+    position: relative;
+    padding-bottom: 70px !important;
+    padding-top: 70px !important;
+}
+
+.home-about-description {
+    color: white !important;
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+    text-align: center;
+}
+
+.about-me {
+    font-size: 2.8rem;
+}
+
+.talent {
+    padding: 50px;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.my-skill {
+    font-size: 30px;
+}
+
+.rounded-image {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.home-about-body {
+    padding-top: 50px;
+    font-size: 1.3em !important;
+}
+
+.social-image {
+    height: 20px;
+    width: 20px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.white-text{
+    color: white;
+}

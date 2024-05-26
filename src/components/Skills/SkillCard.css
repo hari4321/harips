@@ -1,0 +1,17 @@
+.skill-card{
+    background: none;
+    border: 2px solid #FEC260;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    height: 200px;
+    width: 200px;
+    margin-top: 8%;
+}
+
+.skill-image{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}

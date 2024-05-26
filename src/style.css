@@ -1,0 +1,77 @@
+html {
+  --imp-text-color: #FEC260;
+}
+
+body{
+  background-color: #181a27;
+}
+
+/* BACKGROUND */
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#bg canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yellow {
+  color: var(--imp-text-color) !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FEC260;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FEC260;
+  border-radius: 12px;
+}
+
+/* --------- */
+/* Top Gap section */
+/* --------- */
+
+.top-gap{
+  margin-top: 80px;
+}
+
+
+.main-title{
+  color: #FEC260;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.sub-title{
+  color: #FEC260;
+  font-size: 40px;
+  font-weight: 400;
+}
