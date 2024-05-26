@@ -16,8 +16,8 @@
 }
 
 .heading {
-    font-size: 2.4em !important;
-    padding-left: 50px !important;
+    font-size: 5em !important;
+    padding-left: 40px !important;
 }
 
 .heading-name {
@@ -50,10 +50,19 @@
     padding: 50px;
     text-align: left;
     font-size: 1.4rem;
+    font-weight: 700;
+    color: #FEC260;
 }
 
 .my-skill {
     font-size: 30px;
+}
+
+.typerwriter{
+    text-align: left;
+    padding-left: 50px;
+    font-weight: 700;
+    margin-bottom: 3%;
 }
 
 .rounded-image {

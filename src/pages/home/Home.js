@@ -1,4 +1,5 @@
 import "./Home.css";
+import Type from "../../components/Type";
 import myImage from "../../assets/hp.jpg";
 import github from "../../assets/social/github.png";
 import gmail from "../../assets/social/gmail.png";
@@ -12,16 +13,14 @@ export const Home = () => {
           <div className="row">
             <div className="col-md-7 home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi,
+                Hello,
               </h1>
-
               <h1 className="heading-name">
                 I'm
-                <strong className="main-name"> Hariprasad</strong>
+                <strong className="main-name"> Hariprasad</strong>, a passionate
               </h1>
-
-              <div className="talent">
-                Software Developer | Fullstack Developer
+              <div className="typerwriter" >
+                <Type />
               </div>
             </div>
 
