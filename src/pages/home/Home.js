@@ -73,7 +73,10 @@ export const Home = () => {
               <a href="mailto:harips2201@gmail.com" target="_blank">
                 <img src={gmail} alt="Gmail" className="social-icon" />
               </a>
-              <a href="https://linkedin.com" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/hariprasad-s-b35a61225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+              >
                 <img src={linkedin} alt="LinkedIn" className="social-icon" />
               </a>
             </div>
