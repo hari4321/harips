@@ -70,15 +70,6 @@ export const Navbar = () => {
                   Skills
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/resume"
-                  onClick={() => updateExpanded(false)}
-                >
-                  Resume
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

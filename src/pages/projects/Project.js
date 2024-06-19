@@ -18,7 +18,7 @@ export const Project = () => {
             description="This project is used to convert malayalam OCR Tool"
             projectImage={malOcrTool}
             codeLink="https://github.com/hari4321/react-app-demo"
-            demoLink="https://react-app-demo-one.vercel.app/"
+            demoLink="https://mal-ocr-app.vercel.app/"
           />
         </div>
         <div className="col-sm-6 mx-auto">
