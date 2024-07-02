@@ -1,6 +1,6 @@
 import { ProjectCard } from "../../components/Project/ProjectCard";
 import malOcrTool from "../../assets/mal-ocr-tool.png";
-import titanic from "../../assets/titanic.png";
+import titanic from "../../assets/titanic.jpg";
 import sentiment from "../../assets/sentiment.png";
 import heart from "../../assets/heart.jpg";
 import food from "../../assets/food.jpg";
