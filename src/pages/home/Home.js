@@ -5,7 +5,11 @@ import github from "../../assets/social/github.png";
 import gmail from "../../assets/social/gmail.png";
 import linkedin from "../../assets/social/linkedin.png";
 
+import { useNavigate } from "react-router-dom";
+
 export const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="container-fluid home-section" id="home">
@@ -19,7 +23,7 @@ export const Home = () => {
                 I'm
                 <strong className="main-name"> Hariprasad</strong>, a passionate
               </h1>
-              <div className="typerwriter" >
+              <div className="typerwriter">
                 <Type />
               </div>
             </div>
@@ -38,29 +42,42 @@ export const Home = () => {
       <div className="container-fluid home-about-section" id="about">
         <div className="container">
           <div className="row">
-            <div className="col-12 home-about-description">
-              <h1 className="text-center about-me">ABOUT ME</h1>
+            <div className="col-1 col-sm-2"></div>
+            <div className="col-10 col-sm-8 home-about-description">
+              <h1 className="text-center about-me">About Me</h1>
               <p className="home-about-body">
-                <p className="mt-2">Motivated learner skilled in</p> <br />
-                <b className="yellow my-skill">
-                  Machine Learning <br /> Python
-                  <br /> Web Development <br /> Flutter
-                </b>
-                <br />
-                <p className="mt-4">
-                  Proven abilities in problem-solving, project management, and
-                  adaptability
+                <p className="">
+                  Hello, world! I'm a web alchemist turning lines of code into
+                  engaging digital experiences. Whether it's building seamless
+                  interfaces with React or architecting scalable solutions with
+                  Angular, I thrive at the crossroads of creativity and
+                  technology.
                 </p>
-                <br />
-                <p className="mt-2">
-                  Adept at managing projects and tasks with exceptional
-                  organizational skills.
-                </p>
-                <br />
-                <p className="mt-2">
-                  Eager to contribute and grow in a dynamic role
+                <p>
+                  Check out my <b>Skills</b> and explore my <b>Projects</b>!
                 </p>
               </p>
+            </div>
+          </div>
+          <div className="row mb-5">
+            <div className="col-2 col-sm-3"></div>
+            <div class="col-4 col-sm-3 d-flex justify-content-around">
+              <button
+                type="button"
+                class="btn yellow-btn btn-lg"
+                onClick={() => navigate("/skills")}
+              >
+                Skills
+              </button>
+            </div>
+            <div class="col-4 col-sm-3 d-flex justify-content-around">
+              <button
+                type="button"
+                class="btn yellow-btn btn-lg"
+                onClick={() => navigate("/projects")}
+              >
+                Projects
+              </button>
             </div>
           </div>
           <div className="row social">
@@ -72,10 +89,7 @@ export const Home = () => {
               <a href="mailto:harips2201@gmail.com" target="_blank">
                 <img src={gmail} alt="Gmail" className="social-icon" />
               </a>
-              <a
-                href="https://www.linkedin.com/in/hariprasad-s-b35a61225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/harips2201" target="_blank">
                 <img src={linkedin} alt="LinkedIn" className="social-icon" />
               </a>
             </div>

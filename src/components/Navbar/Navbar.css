@@ -9,7 +9,7 @@
     position: fixed !important;
     transition: all 0.3s ease-out 0s !important;
     padding: 0.3rem 2rem !important;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
 }
 
 .navbar-toggler {
@@ -102,7 +102,7 @@
 
 .navbar-nav .nav-item {
     position: relative;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .navbar-nav .nav-item a {
@@ -116,7 +116,7 @@
     content: "";
     position: relative;
     display: block;
-    height: 5px;
+    height: 3px;
     width: 0;
     border-radius: 16px;
     background: #FEC260;

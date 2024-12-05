@@ -37,7 +37,7 @@
 
 .home-about-description {
     color: white !important;
-    padding-top: 100px !important;
+    padding-top: 0px !important;
     padding-bottom: 20px !important;
     text-align: center;
 }
@@ -52,10 +52,6 @@
     font-size: 1.4rem;
     font-weight: 700;
     color: #FEC260;
-}
-
-.my-skill {
-    font-size: 30px;
 }
 
 .typerwriter{
@@ -95,4 +91,13 @@
 
 .white-text{
     color: white;
+}
+
+.yellow-btn{
+    background-color: #FEC260;
+    width: 180px;
+}
+
+.yellow-btn:hover{
+    background-color: #c87f09;
 }

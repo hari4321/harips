@@ -55,6 +55,15 @@ export const Navbar = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link"
+                  to="/"
+                  onClick={() => updateExpanded(false)}
+                >
+                  Education
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
                   to="/projects"
                   onClick={() => updateExpanded(false)}
                 >
@@ -68,6 +77,15 @@ export const Navbar = () => {
                   onClick={() => updateExpanded(false)}
                 >
                   Skills
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/skills"
+                  onClick={() => updateExpanded(false)}
+                >
+                  Contact
                 </Link>
               </li>
             </ul>
