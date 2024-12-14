@@ -1,17 +1,27 @@
-.skill-card{
-    background: none;
-    border: 2px solid #FEC260;
-    cursor: pointer;
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-    height: 200px;
-    width: 200px;
-    margin-top: 8%;
+.skill-card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+  border: 2px solid rgba(254, 194, 96, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  height: 200px;
+  width: 200px;
+  margin-top: 8%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-image{
-    width: 100px;
-    height: 100px;
-    margin-top: 20px;
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.skill-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
 }
