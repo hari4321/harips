@@ -1,5 +1,6 @@
 import { SkillCard } from "../../components/Skills/SkillCard";
 
+// Importing all skill assets
 import python from "../../assets/skills/python.png";
 import java from "../../assets/skills/java.png";
 import html from "../../assets/skills/html.png";
@@ -14,46 +15,31 @@ import mysql from "../../assets/skills/mysql.png";
 import sqlite from "../../assets/skills/sqlite.png";
 
 export const Skills = () => {
+  // Array of skills with their images and names
+  const skills = [
+    { img: python, name: "Python" },
+    { img: java, name: "Java" },
+    { img: html, name: "HTML 5" },
+    { img: css, name: "CSS 3" },
+    { img: js, name: "JavaScript" },
+    { img: bootstrap, name: "Bootstrap" },
+    { img: node, name: "Node.js" },
+    { img: react, name: "React" },
+    { img: flutter, name: "Flutter" },
+    { img: mongo, name: "MongoDB" },
+    { img: mysql, name: "MySQL" },
+    { img: sqlite, name: "SQLite" },
+  ];
+
   return (
     <div className="container top-gap mb-5">
       <div className="text-center main-title">Skills</div>
       <div className="row">
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={python} name="Python" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={java} name="Java" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={html} name="HTML 5" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={css} name="CSS 3" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={bootstrap} name="Bootstrap" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={js} name="Java Script" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={node} name="nodejs" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={react} name="React" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={flutter} name="Flutter" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={mongo} name="MongoDB" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={mysql} name="My SQL" />
-        </div>
-        <div className="col-6 col-sm-4 col-md-3">
-          <SkillCard img={sqlite} name="SQLite" />
-        </div>
+        {skills.map((skill, index) => (
+          <div className="col-6 col-sm-4 col-md-3" key={index}>
+            <SkillCard img={skill.img} name={skill.name} />
+          </div>
+        ))}
       </div>
     </div>
   );
