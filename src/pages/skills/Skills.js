@@ -2,6 +2,8 @@ import { useState } from "react";
 import { SkillCard } from "../../components/Skills/SkillCard";
 import skillsData from "../../data/skills.json";
 
+import './Skills.css';
+
 export const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -23,7 +25,7 @@ export const Skills = () => {
       <div className="row">
         {/* Sidebar */}
         <div className="col-3">
-          <div className="sidebar">
+          <div className="sidebar glassmorphism">
             <div className="text-center sidebar-title mb-3">Categories</div>
             <ul className="list-group">
               <li

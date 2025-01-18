@@ -1,0 +1,52 @@
+/* Sidebar glassmorphism effect */
+.sidebar {
+  position: relative; /* Fix the sidebar in place */
+  top: 0;
+  left: 0;
+  width: 250px; /* Fixed width */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Sidebar title */
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* White text */
+}
+
+/* Sidebar list items */
+.list-group-item {
+  font-size: 1rem;
+  background: transparent; /* Transparent background for items */
+  border: none; /* Remove borders */
+  color: #fff; /* White text */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.list-group-item:hover {
+  background: rgba(255, 255, 255, 0.3); /* Highlight effect on hover */
+  color: #000; /* Change text color on hover */
+}
+
+/* Active category item */
+.list-group-item.active {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Slightly more opaque for active item */
+  color: #000; /* Black text */
+  border: none;
+}
+
+/* Content area padding to prevent overlap with fixed sidebar */
+.container {
+  padding: 20px;
+}
