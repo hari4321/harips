@@ -58,8 +58,8 @@ export const Skills = () => {
           <div className="text-center main-title">Skills</div>
           <div className="row">
             {filteredSkills.map((skill, index) => (
-              <div className="col-6 col-sm-4 col-md-3" key={index}>
-                <SkillCard img={skill.img} name={skill.name} />
+              <div className="col-12 col-sm-6 col-md-3" key={index}>
+                <SkillCard img={require(`../../assets/skills/${skill.img}`)} name={skill.name} />
               </div>
             ))}
           </div>

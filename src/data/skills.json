@@ -1,66 +1,65 @@
 {
-    "categories": ["Programming Languages", "Frontend", "Backend", "Databases", "Frameworks"],
-    "skills": [
-      {
-        "name": "Python",
-        "img": "../../assets/skills/python.png",
-        "categories": ["Programming Languages", "Backend"]
-      },
-      {
-        "name": "Java",
-        "img": "../../assets/skills/java.png",
-        "categories": ["Programming Languages", "Backend"]
-      },
-      {
-        "name": "HTML 5",
-        "img": "../../assets/skills/html.png",
-        "categories": ["Frontend"]
-      },
-      {
-        "name": "CSS 3",
-        "img": "../../assets/skills/css.png",
-        "categories": ["Frontend"]
-      },
-      {
-        "name": "JavaScript",
-        "img": "../../assets/skills/js.png",
-        "categories": ["Programming Languages", "Frontend"]
-      },
-      {
-        "name": "Bootstrap",
-        "img": "../../assets/skills/bootstrap.png",
-        "categories": ["Frontend"]
-      },
-      {
-        "name": "Node.js",
-        "img": "../../assets/skills/nodejs.png",
-        "categories": ["Backend"]
-      },
-      {
-        "name": "React",
-        "img": "../../assets/skills/react.png",
-        "categories": ["Frontend", "Frameworks"]
-      },
-      {
-        "name": "Flutter",
-        "img": "../../assets/skills/flutter.png",
-        "categories": ["Frontend", "Frameworks"]
-      },
-      {
-        "name": "MongoDB",
-        "img": "../../assets/skills/mongo.png",
-        "categories": ["Databases"]
-      },
-      {
-        "name": "MySQL",
-        "img": "../../assets/skills/mysql.png",
-        "categories": ["Databases"]
-      },
-      {
-        "name": "SQLite",
-        "img": "../../assets/skills/sqlite.png",
-        "categories": ["Databases"]
-      }
-    ]
-  }
-  
+  "categories": ["Programming Languages", "Frontend", "Backend", "Databases", "Frameworks"],
+  "skills": [
+    {
+      "name": "Python",
+      "img": "python.png",
+      "categories": ["Programming Languages", "Backend"]
+    },
+    {
+      "name": "Java",
+      "img": "java.png",
+      "categories": ["Programming Languages", "Backend"]
+    },
+    {
+      "name": "HTML 5",
+      "img": "html.png",
+      "categories": ["Frontend"]
+    },
+    {
+      "name": "CSS 3",
+      "img": "css.png",
+      "categories": ["Frontend"]
+    },
+    {
+      "name": "JavaScript",
+      "img": "js.png",
+      "categories": ["Programming Languages", "Frontend"]
+    },
+    {
+      "name": "Bootstrap",
+      "img": "bootstrap.png",
+      "categories": ["Frontend"]
+    },
+    {
+      "name": "Node.js",
+      "img": "nodejs.png",
+      "categories": ["Backend"]
+    },
+    {
+      "name": "React",
+      "img": "react.png",
+      "categories": ["Frontend", "Frameworks"]
+    },
+    {
+      "name": "Flutter",
+      "img": "flutter.png",
+      "categories": ["Frontend", "Frameworks"]
+    },
+    {
+      "name": "MongoDB",
+      "img": "mongo.png",
+      "categories": ["Databases"]
+    },
+    {
+      "name": "MySQL",
+      "img": "mysql.png",
+      "categories": ["Databases"]
+    },
+    {
+      "name": "SQLite",
+      "img": "sqlite.png",
+      "categories": ["Databases"]
+    }
+  ]
+}
