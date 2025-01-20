@@ -1,8 +1,9 @@
 /* Sidebar glassmorphism effect */
 .sidebar {
-  position: relative; /* Fix the sidebar in place */
-  top: 0;
-  left: 0;
+  position: fixed; /* Fix the sidebar in place */
+  top: 50%; /* Position it at the middle of the page */
+  left: 5%; /* Keep it 5% away from the left edge */
+  transform: translateY(-50%); /* Adjust to center vertically */
   width: 250px; /* Fixed width */
   padding: 20px;
   background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
@@ -23,15 +24,16 @@
 /* Sidebar list items */
 .list-group-item {
   font-size: 1rem;
-  background: transparent; /* Transparent background for items */
-  border: none; /* Remove borders */
-  color: #fff; /* White text */
-  transition: background 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  background: transparent;
+  border: none;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
 }
 
 .list-group-item:hover {
-  background: rgba(255, 255, 255, 0.3); /* Highlight effect on hover */
-  color: #000; /* Change text color on hover */
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
 }
 
 /* Active category item */
@@ -44,9 +46,4 @@
   ); /* Slightly more opaque for active item */
   color: #000; /* Black text */
   border: none;
-}
-
-/* Content area padding to prevent overlap with fixed sidebar */
-.container {
-  padding: 20px;
 }
