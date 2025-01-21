@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import projectsData from "../../data/projects.json";
 
 import "./ProjectDetail.css";
@@ -13,6 +13,7 @@ import movie from "../../assets/movie.jpg";
 
 export const ProjectDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   // Map of image identifiers to imported assets
   const projectImages = {
@@ -47,6 +48,12 @@ export const ProjectDetails = () => {
               style={{ maxWidth: "100%", height: "auto" }}
             />
           </div>
+          <button
+              className="btn btn-secondary back-btn mt-3"
+              onClick={() => navigate(-1)}
+            >
+              Back to Listing
+            </button>
         </div>
 
         {/* Right Section */}
