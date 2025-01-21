@@ -7,6 +7,7 @@ import { AnimatedBackground } from './components/Background/Background';
 import { Project } from './pages/projects/Project';
 import { Skills } from './pages/skills/Skills';
 import { Resume } from './pages/resume/Resume';
+import { ProjectDetails } from './pages/projectDetail/ProjectDetail';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/projects' element={<Project/>}/>
           <Route path='/skills' element={<Skills/>}/>
           <Route path='/resume' element={<Resume/>}/>
+          <Route path='/project/:id' element={<ProjectDetails/>}/>
         </Routes>
       </Router>
     </div>

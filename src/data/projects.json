@@ -3,6 +3,7 @@
       "category": "Web Projects",
       "projects": [
         {
+          "id": 1,
           "projectName": "OCR Tool",
           "description": "This project is used to convert malayalam OCR Tool",
           "projectImage": "malOcrTool",
@@ -10,6 +11,7 @@
           "demoLink": "https://mal-ocr-app.vercel.app/"
         },
         {
+          "id": 2,
           "projectName": "Survival Prediction",
           "description": "A fun project to learn about deployment of machine learning projects",
           "projectImage": "titanic",
@@ -22,24 +24,28 @@
       "category": "AI Projects",
       "projects": [
         {
+          "id": 3,
           "projectName": "Sentiment Analysis",
           "description": "Analysis of sentiments inside of the comments from twitter dataset",
           "projectImage": "sentiment",
           "codeLink": "https://github.com/hari4321/sentiment_analysis"
         },
         {
+          "id": 4,
           "projectName": "Disease Prediction",
           "description": "Project done for heart disease prediction from different parameters",
           "projectImage": "heart",
           "codeLink": "https://github.com/hari4321/heart_disease_pred"
         },
         {
+          "id": 5,
           "projectName": "Demand Prediction",
           "description": "This project deals with food demand prediction",
           "projectImage": "food",
           "codeLink": "https://github.com/hari4321/food_pred"
         },
         {
+          "id": 6,
           "projectName": "Recommendation System",
           "description": "Recommendation system based on movie rating",
           "projectImage": "movie",

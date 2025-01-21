@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { ProjectCard } from "../../components/Project/ProjectCard";
 import { Sidebar } from "../../components/Sidebar/Sidebar";
 import projectsData from "../../data/projects.json";
@@ -12,6 +13,9 @@ import food from "../../assets/food.jpg";
 import movie from "../../assets/movie.jpg";
 
 export const Project = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const navigate = useNavigate();
+
   // Map of image identifiers to imported assets
   const projectImages = {
     malOcrTool,
@@ -22,22 +26,20 @@ export const Project = () => {
     movie,
   };
 
-  // State to manage the selected category
-  const [selectedCategory, setSelectedCategory] = useState("All");
-
-  // Extract unique categories
   const categories = [...projectsData.map((category) => category.category)];
 
-  // Handle category selection
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
 
-  // Filter projects based on selected category
   const filteredProjects =
     selectedCategory === "All"
       ? projectsData
       : projectsData.filter((category) => category.category === selectedCategory);
+
+  const handleMoreInfoClick = (id) => {
+    navigate(`/project/${id}`);
+  };
 
   return (
     <div className="container top-gap">
@@ -54,6 +56,7 @@ export const Project = () => {
 
         {/* Projects Grid */}
         <div className="col-9">
+          <div className="text-center main-title">Projects</div>
           {filteredProjects.map((category, index) => (
             <div key={index}>
               <div className="text-center sub-title">{category.category}</div>
@@ -63,10 +66,16 @@ export const Project = () => {
                     <ProjectCard
                       projectName={project.projectName}
                       description={project.description}
-                      projectImage={projectImages[project.projectImage]} // Dynamically map to the image
+                      projectImage={projectImages[project.projectImage]}
                       codeLink={project.codeLink}
                       demoLink={project.demoLink}
                     />
+                    <button
+                      className="btn btn-info mt-2"
+                      onClick={() => handleMoreInfoClick(project.id)}
+                    >
+                      More Info
+                    </button>
                   </div>
                 ))}
               </div>
