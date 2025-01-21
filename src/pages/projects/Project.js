@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { ProjectCard } from "../../components/Project/ProjectCard";
+import { Sidebar } from "../../components/Sidebar/Sidebar";
 import projectsData from "../../data/projects.json";
 
 // Import all images
@@ -20,27 +22,58 @@ export const Project = () => {
     movie,
   };
 
+  // State to manage the selected category
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  // Extract unique categories
+  const categories = [...projectsData.map((category) => category.category)];
+
+  // Handle category selection
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+
+  // Filter projects based on selected category
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projectsData
+      : projectsData.filter((category) => category.category === selectedCategory);
+
   return (
     <div className="container top-gap">
-      <div className="text-center main-title">Projects</div>
-      {projectsData.map((category, index) => (
-        <div key={index}>
-          <div className="text-center sub-title">{category.category}</div>
-          <div className="row">
-            {category.projects.map((project, idx) => (
-              <div className="col-sm-6 mx-auto" key={idx}>
-                <ProjectCard
-                  projectName={project.projectName}
-                  description={project.description}
-                  projectImage={projectImages[project.projectImage]} // Dynamically map to the image
-                  codeLink={project.codeLink}
-                  demoLink={project.demoLink}
-                />
-              </div>
-            ))}
-          </div>
+      <div className="row">
+        {/* Sidebar */}
+        <div className="col-3">
+          <Sidebar
+            heading="Project Categories"
+            categories={categories}
+            selectedCategory={selectedCategory}
+            onCategoryClick={handleCategoryClick}
+          />
         </div>
-      ))}
+
+        {/* Projects Grid */}
+        <div className="col-9">
+          {filteredProjects.map((category, index) => (
+            <div key={index}>
+              <div className="text-center sub-title">{category.category}</div>
+              <div className="row">
+                {category.projects.map((project, idx) => (
+                  <div className="col-sm-6 mx-auto" key={idx}>
+                    <ProjectCard
+                      projectName={project.projectName}
+                      description={project.description}
+                      projectImage={projectImages[project.projectImage]} // Dynamically map to the image
+                      codeLink={project.codeLink}
+                      demoLink={project.demoLink}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
