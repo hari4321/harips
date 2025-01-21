@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { SkillCard } from "../../components/Skills/SkillCard";
+import { Sidebar } from "../../components/Sidebar/Sidebar";
 import skillsData from "../../data/skills.json";
 
-import './Skills.css';
+import "./Skills.css";
 
 export const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -25,32 +26,12 @@ export const Skills = () => {
       <div className="row">
         {/* Sidebar */}
         <div className="col-3">
-          <div className="sidebar glassmorphism">
-            <div className="text-center sidebar-title mb-3">Categories</div>
-            <ul className="list-group">
-              <li
-                className={`list-group-item ${
-                  selectedCategory === "All" ? "active" : ""
-                }`}
-                onClick={() => handleCategoryClick("All")}
-                style={{ cursor: "pointer" }}
-              >
-                All
-              </li>
-              {skillsData.categories.map((category, index) => (
-                <li
-                  key={index}
-                  className={`list-group-item ${
-                    selectedCategory === category ? "active" : ""
-                  }`}
-                  onClick={() => handleCategoryClick(category)}
-                  style={{ cursor: "pointer" }}
-                >
-                  {category}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <Sidebar
+            heading="Categories"
+            categories={skillsData.categories}
+            selectedCategory={selectedCategory}
+            onCategoryClick={handleCategoryClick}
+          />
         </div>
 
         {/* Skills Grid */}
