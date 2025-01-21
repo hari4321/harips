@@ -8,7 +8,8 @@
           "description": "This project is used to convert malayalam OCR Tool",
           "projectImage": "malOcrTool",
           "codeLink": "https://github.com/hari4321/react-app-demo",
-          "demoLink": "https://mal-ocr-app.vercel.app/"
+          "demoLink": "https://mal-ocr-app.vercel.app/",
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
         },
         {
           "id": 2,
@@ -16,7 +17,8 @@
           "description": "A fun project to learn about deployment of machine learning projects",
           "projectImage": "titanic",
           "demoLink": "http://harips.pythonanywhere.com/",
-          "codeLink": "https://github.com/hari4321/titanic_survival_prediction"
+          "codeLink": "https://github.com/hari4321/titanic_survival_prediction",
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
         }
       ]
     },
@@ -28,28 +30,32 @@
           "projectName": "Sentiment Analysis",
           "description": "Analysis of sentiments inside of the comments from twitter dataset",
           "projectImage": "sentiment",
-          "codeLink": "https://github.com/hari4321/sentiment_analysis"
+          "codeLink": "https://github.com/hari4321/sentiment_analysis",
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
         },
         {
           "id": 4,
           "projectName": "Disease Prediction",
           "description": "Project done for heart disease prediction from different parameters",
           "projectImage": "heart",
-          "codeLink": "https://github.com/hari4321/heart_disease_pred"
+          "codeLink": "https://github.com/hari4321/heart_disease_pred",
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
         },
         {
           "id": 5,
           "projectName": "Demand Prediction",
           "description": "This project deals with food demand prediction",
           "projectImage": "food",
-          "codeLink": "https://github.com/hari4321/food_pred"
+          "codeLink": "https://github.com/hari4321/food_pred",
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
         },
         {
           "id": 6,
           "projectName": "Recommendation System",
           "description": "Recommendation system based on movie rating",
           "projectImage": "movie",
-          "codeLink": "https://github.com/hari4321/rec_sys"
+          "codeLink": "https://github.com/hari4321/rec_sys",
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
         }
       ]
     }
