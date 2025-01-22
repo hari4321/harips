@@ -9,7 +9,8 @@
           "projectImage": "malOcrTool",
           "codeLink": "https://github.com/hari4321/react-app-demo",
           "demoLink": "https://mal-ocr-app.vercel.app/",
-          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus.",
+          "technologiesUsed": ["Python", "React", "Bootstrap", "HTML 5", "CCSS 3"]
         },
         {
           "id": 2,
@@ -18,7 +19,8 @@
           "projectImage": "titanic",
           "demoLink": "http://harips.pythonanywhere.com/",
           "codeLink": "https://github.com/hari4321/titanic_survival_prediction",
-          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus.",
+          "technologiesUsed": ["Python", "Bootstrap", "HTML 5", "CCSS 3"]
         }
       ]
     },
@@ -31,7 +33,8 @@
           "description": "Analysis of sentiments inside of the comments from twitter dataset",
           "projectImage": "sentiment",
           "codeLink": "https://github.com/hari4321/sentiment_analysis",
-          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus.",
+          "technologiesUsed": ["Python"]
         },
         {
           "id": 4,
@@ -39,7 +42,8 @@
           "description": "Project done for heart disease prediction from different parameters",
           "projectImage": "heart",
           "codeLink": "https://github.com/hari4321/heart_disease_pred",
-          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus.",
+          "technologiesUsed": ["Python"]
         },
         {
           "id": 5,
@@ -47,7 +51,8 @@
           "description": "This project deals with food demand prediction",
           "projectImage": "food",
           "codeLink": "https://github.com/hari4321/food_pred",
-          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus.",
+          "technologiesUsed": ["Python"]
         },
         {
           "id": 6,
@@ -55,7 +60,8 @@
           "description": "Recommendation system based on movie rating",
           "projectImage": "movie",
           "codeLink": "https://github.com/hari4321/rec_sys",
-          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus."
+          "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, lorem in bibendum facilisis, turpis orci egestas lorem, eu tincidunt mi est sed lacus.",
+          "technologiesUsed": ["Python"]
         }
       ]
     }
