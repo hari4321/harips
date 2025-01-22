@@ -58,17 +58,17 @@ export const ProjectDetails = () => {
 
         {/* Right Section */}
         <div className="project-right">
+
+          <h2 className="section-title">Project Details</h2>
+          <p className="long-description">{project.longDescription}</p>
+
           <h2 className="section-title">Technologies Used</h2>
           <ul className="technologies-list">
-            {/* Replace the below static list with a dynamic list if technologies are part of the JSON */}
             <li>React</li>
             <li>JavaScript</li>
             <li>CSS</li>
             <li>Node.js</li>
           </ul>
-
-          <h2 className="section-title">Project Details</h2>
-          <p className="long-description">{project.longDescription}</p>
 
           <div className="button-group">
             <a
